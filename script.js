@@ -15,7 +15,7 @@ let dayArr = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 
 searchBtn.addEventListener("click", function (e) {
- ;
+ 
     e.preventDefault();
     target = searchField.value;
     

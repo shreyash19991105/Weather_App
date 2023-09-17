@@ -81,7 +81,7 @@ nav .weather_input {
     width: 98%;
 }
 
-nav .weather_input button {
+nav .weather_input button { 
     background-color: #4ECDC4;
     font-size: 1.1rem;
     color: white;
