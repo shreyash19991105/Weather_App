@@ -32,7 +32,7 @@ searchField.addEventListener('keydown',(e)=>{
 
 async function fetchData(target) {
     try {
-        let url = `http://api.weatherapi.com/v1/current.json?key=7e19e3b77f8c48e4804124302231709&q=${target}&aqi=yes`;
+        let url = `https://api.weatherapi.com/v1/current.json?key=7e19e3b77f8c48e4804124302231709&q=${target}&aqi=yes`;
         let response = await fetch(url);
         //console.log(response);
         let data = await response.json();
