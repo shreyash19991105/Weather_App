@@ -34,9 +34,9 @@ async function fetchData(target) {
     try {
         let url = `http://api.weatherapi.com/v1/current.json?key=7e19e3b77f8c48e4804124302231709&q=${target}&aqi=yes`;
         let response = await fetch(url);
-        console.log(response);
+        //console.log(response);
         let data = await response.json();
-        console.log(data);
+        //console.log(data);
         let currentTemp = data.current.temp_c;
         let currentCondition = data.current.condition.text;
         let locationName = data.location.name
@@ -44,13 +44,13 @@ async function fetchData(target) {
         let conditionEmoji = data.current.condition.icon
         let pm2_5 = data.current.air_quality.pm2_5;
         let pm10 = data.current.air_quality.pm10;
-        console.log(locationName, currentTemp, currentCondition, localTime, conditionEmoji,pm2_5,pm10);
+        //console.log(locationName, currentTemp, currentCondition, localTime, conditionEmoji,pm2_5,pm10);
        
         updateDOM(locationName, currentTemp, currentCondition, localTime, conditionEmoji,pm2_5,pm10);
     }
     catch (error) {
         alert("Please put a valid location");
-        console.log(error);
+        //console.log(error);
     }
 }
 
@@ -61,7 +61,7 @@ function updateDOM(locationName, temp, condition, dateTime, conditionEmoji,pm2_5
     let time = arr[1];
     
     let dayNumber = new Date(date).getDay();
-    console.log(dayArr[dayNumber]);
+    //console.log(dayArr[dayNumber]);
     let dayName = dayArr[dayNumber];
     dateFiled.innerText = `${time} ${dayName} ${date}`;
     temperatureField.innerText = temp;
