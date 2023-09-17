@@ -78,3 +78,4 @@ function updateDOM(locationName, temp, condition, dateTime, conditionEmoji,pm2_5
 
 
 
+
